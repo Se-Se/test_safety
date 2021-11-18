@@ -1,25 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from "react";
+import "./App.css";
+import "./assets/resource.css";
+import Routes from "./routes/index";
+import intl from "react-intl-universal";
+import { getQueryVariable, getAllUrlParams } from "@/utils/index";
+import { PersistGate } from "redux-persist/integration/react";
+import { Provider } from "react-redux";
+import { store, persistor } from "@/store";
 
-function App() {
+// import { Route, useHistory, withRouter, BrowserRouter } from "react-router-dom";
+
+const locales = {
+  "en-us": require("@/locales/en-US.json"),
+  "zh-cn": require("@/locales/zh-CN.json"),
+};
+
+export default function App() {
+  let preLang = getAllUrlParams().lang ||(store.getState().localesReducer.language || "zh-cn");
+  useEffect(() => {
+    intl
+      .init({
+        currentLocale: preLang,
+        locales,
+      })
+      .then(() => {
+        let lang = getQueryVariable("lang");
+        if (preLang !== lang) {
+          window.location.search = `?lang=${lang}`;
+        }
+      });
+  });
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Provider store={store}>
+        <PersistGate loading={null} persistor={persistor}>
+          <Routes />
+        </PersistGate>
+      </Provider>
+    </>
   );
 }
-
-export default App;

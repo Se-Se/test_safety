@@ -1,0 +1,128 @@
+$color-fill-1: #0c1a48 !default;
+$color-fill-2: #25397a !default;
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  border-radius: 5px;
+}
+::-ms-scrollbar {
+  width: 8px;
+  height: 8px;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
+::-ms-scrollbar-corner {
+  background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: rgba($color: $color-fill-1, $alpha: 0.2);
+  transition: all 0.3s;
+  &:hover {
+    background-color: rgba($color: $color-fill-1, $alpha: 0.4);
+  }
+}
+::-ms-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: rgba($color: #fff, $alpha: 0.2);
+  transition: all 0.3s;
+  &:hover {
+    background-color: rgba($color: #fff, $alpha: 0.4);
+  }
+}
+
+// JsonReview  scss
+
+.react-json-view {
+  font-size: 16px;
+  span[style*="font-weight"] {
+    font-weight: normal !important;
+    color: red !important;
+  }
+  .object-key span {
+    color: #36a0dd !important;
+  }
+  .array-key {
+    color: #36a0dd !important;
+  }
+  .icon-container {
+    display: none !important;
+  }
+  .variable-row {
+    border-left: 0 !important;
+  }
+  .object-key-val {
+    border-left: 0 !important;
+    color: #36a0dd !important;
+  }
+}
+
+.code-modal {
+  .json-review-content {
+    min-height: 400px;
+    max-height: 600px;
+    overflow-y: auto;
+    padding: 0 20px;
+  }
+}
+
+// ResourceEdit
+#root {
+  height: inherit;
+}
+.r-content-scroll {
+  position: relative;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 20px;
+}
+.r-scroll-content-body {
+  padding: 0;
+}
+
+.resource-wrap {
+  .tea-layout__body {
+    overflow: hidden;
+    .tea-layout__content {
+      height: fit-content;
+    }
+  }
+  .r-footer-sec {
+    position: absolute;
+    background-color: white;
+    z-index: 10;
+    height: 70px;
+    width: calc(100% + 40px);
+    left: -10px;
+    .btn {
+      width: 100px;
+      height: 40px;
+      position: absolute;
+      top: 50%;
+      transform: translate(0, -50%);
+    }
+    .save-btn {
+      left: 30px;
+    }
+    .cancel-btn {
+      left: 150px;
+      color: black;
+    }
+  }
+}
+.r-doc-com {
+  margin-top: 20px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.duck-button {
+  background-color: $color-fill-1;
+  color: #fff;
+  :hover {
+    background: $color-fill-2 !important;
+  }
+}

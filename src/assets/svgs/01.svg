@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="63" height="76" viewBox="0 0 63 76">
+  <defs>
+    <clipPath id="clip-_01">
+      <rect width="63" height="76"/>
+    </clipPath>
+  </defs>
+  <g id="_01" data-name="01" clip-path="url(#clip-_01)">
+    <path id="联合_1" data-name="联合 1" d="M5.429,76A5.429,5.429,0,0,1,0,70.571V5.429A5.429,5.429,0,0,1,5.429,0H31.486a5.429,5.429,0,0,1,5.429,5.429V70.571A5.429,5.429,0,0,1,31.486,76Zm7.6-13.028H23.886V13.028H13.028Z" fill="#0c1a48" stroke="rgba(0,0,0,0)" stroke-miterlimit="10" stroke-width="1"/>
+    <path id="矩形_31_拷贝_2" data-name="矩形 31 拷贝 2" d="M842.429,2715v-62.971H837L842.429,2639h13.029v76Z" transform="translate(-792.543 -2639)" fill="#0c1a48" stroke="rgba(0,0,0,0)" stroke-miterlimit="10" stroke-width="1"/>
+  </g>
+</svg>

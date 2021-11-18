@@ -1,0 +1,214 @@
+/* #root{
+   height: inherit;
+} */
+.resource-wrap .tea-menu__list {
+    background-color: white;
+}
+
+.resource-wrap .tea-menu__submenu .tea-menu__item {
+    background-color: white !important;
+}
+
+.resource-wrap .tea-menu--light.tea-menu {
+    border: 0;
+}
+
+.resource-wrap .tea-layout__content-body-inner {
+    max-width: none;
+}
+
+.resource-wrap .resource-sider {
+    width: 200px;
+}
+
+.resource-wrap .resource-sider .tea-menu__text {
+    max-width: none;
+}
+
+.resource-wrap .resource-table .tea-card {
+    background-color: unset;
+    box-shadow: none;
+}
+
+.resource-wrap .r-tags {
+    border: 1px solid #cfd5de;
+    width: 400px;
+}
+
+.resource-wrap .r-tags .r-tags-content {
+    width: 100%;
+    min-height: 10px;
+    padding: 10px;
+}
+
+.resource-wrap .r-tags .r-detail-tags .tea-tag-group .tea-tag{
+    display: none;
+}
+.resource-wrap .r-tags .r-detail-tags .tea-tag-input__inner{
+    border: none;
+}
+.resource-wrap .r-tags .r-tags-select {
+   position: relative;
+   padding-left: 10px;
+}
+.resource-wrap .r-tags .r-tags-select .r-tags-select-i{
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translate(0,-50%);
+ }
+
+.content-relative {
+    position: relative;
+}
+
+.resource-wrap .tea-layout__content {
+    overflow: hidden;
+}
+
+
+/* ~ 样式 */
+
+.resource-wrap .r-wave {
+    display: block;
+    font-size: 20px;
+    width: 50px;
+    position: absolute;
+}
+
+.resource-wrap .r-partitionid-select {
+    position: relative;
+    margin-right: 30px;
+}
+
+.resource-wrap .r-partitionid-select::after {
+    content: '~';
+    font-size: 20px;
+    position: absolute;
+    right: -20px;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.r-modal {
+    background-color: rgba(252, 252, 252, 0.3);
+}
+
+.r-modal .tea-dialog__inner {
+    width: 80%;
+    min-width: 500px;
+    max-width: 1200px;
+}
+
+.r-doctable-title {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    margin: 30px 0 !important;
+    padding: 20px 0;
+}
+
+.r-doc-search .tea-btn--dismiss {
+    display: none;
+}
+
+/* package */
+
+.package-tabs {
+    padding: 20px 0 0 0 !important
+}
+
+.package-tabs .tea-card {
+    margin: 0 20px;
+}
+
+.package-tabs .tea-tabs__tabpanel {
+    padding-top: 10px !important;
+}
+
+.package-tabs .doc-up-title {
+    margin: 20px 0 0 0;
+}
+
+.r-pack-header .tea-step__item, .r-pack-header .tea-step__num {
+    vertical-align: text-top;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.r-pack-header .tea-step {
+    height: 60px;
+    padding: 20px;
+}
+
+.r-conform-modal .tea-dialog__inner {
+    width: 600px !important;
+}
+
+/* packResource */
+
+/* #json{outline: 1px solid #ccc; }
+ .string { color: green; }
+ .number { color: darkorange; }
+ .boolean { color: blue; }
+ .null { color: magenta; }
+ .key { color: red; } */
+
+.code-modal {
+    background-color: rgba(252, 252, 252, 0.3);
+}
+
+.code-modal .tea-dialog__inner {
+
+    min-width: 800px;
+    max-width: 1200px;
+}
+
+.code-modal .tea-dialog__headertitle {
+    font-weight: normal;
+    font-size: 16px;
+}
+
+#mark {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    left: 0;
+    top: 0;
+    z-index: 99;
+}
+
+.alert-notice {
+    position: fixed !important;
+    z-index: 100;
+    top: 60px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    border: 1px solid #8fbefc !important;
+}
+.alert-error {
+    position: fixed !important;
+    z-index: 100;
+    top: 60px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    border: 1px solid #f57373 !important;
+}
+
+/* .del-list-modal .tea-dialog__body {
+    height: 500px;
+    overflow-y: auto;
+} */
+
+/*====================================== DocManageCom============================== */
+.r-key-select {
+    position: relative;
+ }
+ .r-key-select .r-tags-select-i{
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translate(0,-50%);
+ }
+
+ 
